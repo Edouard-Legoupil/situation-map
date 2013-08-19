@@ -8,15 +8,15 @@ $(function() {
     var layers = [
 
             {
-                title: 'School',
-                map: 'unhcr.pop_flow'
+                title: 'Schools',
+                map: 'unhcr.infrajordaneduc'
             },
             {
-                title: 'Health Center',
+                title: 'Health Centers',
                 map: 'unhcr.infra-jordan'
             },
             {
-                title: 'Hospital',
+                title: 'Hospitals',
                 map: 'unhcr.infrajordanhospital'
             },
             {
@@ -26,12 +26,12 @@ $(function() {
         ],
         basemap = {  
             // Sets up the base map toggle       
-            satellite: 'unhcr.map-zdgpcmtu,unhcr.unhcr-global-emergency-countries', 
-            terrain: 'unhcr.map-0wl8cuf8,unhcr.unhcr-global-emergency-countries' 
+            satellite: 'unhcr.map-zdgpcmtu', 
+            terrain: 'unhcr.map-0wl8cuf8' 
         },
         borders = {         
             //Sets up the borders toggle
-            un: 'unhcr.Borders,unhcr.unhcr-situation-border-buffer',
+            un: 'unhcr.Borders',
             streets: 'unhcr.map-9hudy8xp' 
         },
         markers = mapbox.markers.layer(),
