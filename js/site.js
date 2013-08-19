@@ -9,11 +9,11 @@ $(function() {
 
             {
                 title: 'Schools',
-                map: 'unhcr.infrajordaneduc'
+                map: 'unhcr.infrajordanschool'
             },
             {
                 title: 'Health Centers',
-                map: 'unhcr.infra-jordan'
+                map: 'unhcr.infrajordanhealth'
             },
             {
                 title: 'Hospitals',
