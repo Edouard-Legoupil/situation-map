@@ -9,15 +9,15 @@ $(function() {
 
             {
                 title: 'Schools',
-                map: 'unhcr.infrajordaneduc'
+                map: 'unhcr.infrajordaneduc,unhcr.jordanrefugee'
             },
             {
                 title: 'Health Centers',
-                map: 'unhcr.infrajordanhealth'
+                map: 'unhcr.jordanrefugee,unhcr.infrajordanhealth'
             },
             {
                 title: 'Hospitals',
-                map: 'unhcr.infrajordanhospital'
+                map: ',unhcr.jordanrefugee,unhcr.infrajordanhospital'
             },
             {
                 title: 'UNHCR Offices',
