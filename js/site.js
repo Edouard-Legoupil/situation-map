@@ -9,7 +9,7 @@ $(function() {
 
             {
                 title: 'Schools',
-                map: 'unhcr.infrajordanschool'
+                map: 'unhcr.infrajordaneduc'
             },
             {
                 title: 'Health Centers',
