@@ -6,10 +6,13 @@ $(function() {
     // If MapBox layer: use map: 
     // Use tooltip: to add interactivity, set tooltip below at var = tooltip
     var layers = [
-
+            {
+                title: 'Jordanian Population (2011)',
+                map: 'unhcr.jordanrefugee'
+            },
             {
                 title: 'Schools',
-                map: 'unhcr.infrajordaneduc,unhcr.jordanrefugee'
+                map: 'unhcr.jordanrefugee,unhcr.infrajordaneduc'
             },
             {
                 title: 'Health Centers',
@@ -21,7 +24,7 @@ $(function() {
             },
             {
                 title: 'UNHCR Offices',
-                map: 'unhcr.UNHCR-Offices'
+                map: 'unhcr.jordanrefugee,unhcr.UNHCR-Offices'
             }
         ],
         basemap = {  
