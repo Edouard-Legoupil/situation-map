@@ -7,28 +7,28 @@ $(function() {
     // Use tooltip: to add interactivity, set tooltip below at var = tooltip
     var layers = [
             {
-                title: 'Refugee Concentration',
-                map: 'unhcr.jordanrefugee'
+                title: 'Syrian Refugee Concentration',
+                map: 'unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             },
             {
                 title: 'Jordanian Population (2011)',
-                map: 'unhcr.jordanpopulation'
+                map: 'unhcr.jordanpopulation_sub,unhcr.jordanpopulation_dis,unhcr.jordanpopulation_gov'
             },
             {
                 title: 'Schools',
-                map: 'unhcr.infrajordaneduc,unhcr.jordanrefugee'
+                map: 'unhcr.infrajordaneduc,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             },
             {
                 title: 'Health Centers',
-                map: 'unhcr.infrajordanhealth,unhcr.jordanrefugee'
+                map: 'unhcr.infrajordanhealth,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             },
             {
                 title: 'Hospitals',
-                map: 'unhcr.infrajordanhospital,unhcr.jordanrefugee'
+                map: 'unhcr.infrajordanhospital,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             },
             {
                 title: 'UNHCR Offices',
-                map: 'unhcr.UNHCR-Offices,unhcr.jordanrefugee'
+                map: 'unhcr.UNHCR-Offices,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             }
         ],
         basemap = {  
