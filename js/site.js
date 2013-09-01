@@ -7,12 +7,16 @@ $(function() {
     // Use tooltip: to add interactivity, set tooltip below at var = tooltip
     var layers = [
             {
-                title: 'Syrian Refugee Concentration',
+                title: 'Syrian Refugees',
                 map: 'unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             },
             {
-                title: 'Jordanian Population (2011)',
+                title: 'Jordanian Population',
                 map: 'unhcr.jordanpopulation_sub,unhcr.jordanpopulation_dis,unhcr.jordanpopulation_gov'
+            },
+            {
+                title: 'Syrians / Jordanian Ratio',
+                map: 'unhcr.jordanratio_sub,unhcr.jordanratio_dis,unhcr.jordanratio_gov'
             },
             {
                 title: 'Schools',
