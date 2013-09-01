@@ -7,35 +7,39 @@ $(function() {
     // Use tooltip: to add interactivity, set tooltip below at var = tooltip
     var layers = [
             {
-                title: 'Jordanian Population (2011)',
+                title: 'Refugee Concentration',
                 map: 'unhcr.jordanrefugee'
             },
             {
+                title: 'Jordanian Population (2011)',
+                map: 'unhcr.jordanpopulation'
+            },
+            {
                 title: 'Schools',
-                map: 'unhcr.jordanrefugee,unhcr.infrajordaneduc'
+                map: 'unhcr.infrajordaneduc,unhcr.jordanrefugee'
             },
             {
                 title: 'Health Centers',
-                map: 'unhcr.jordanrefugee,unhcr.infrajordanhealth'
+                map: 'unhcr.infrajordanhealth,unhcr.jordanrefugee'
             },
             {
                 title: 'Hospitals',
-                map: ',unhcr.jordanrefugee,unhcr.infrajordanhospital'
+                map: 'unhcr.infrajordanhospital,unhcr.jordanrefugee'
             },
             {
                 title: 'UNHCR Offices',
-                map: 'unhcr.jordanrefugee,unhcr.UNHCR-Offices'
+                map: 'unhcr.UNHCR-Offices,unhcr.jordanrefugee'
             }
         ],
         basemap = {  
-            // Sets up the base map toggle       
-            satellite: 'unhcr.map-zdgpcmtu', 
-            terrain: 'unhcr.map-0wl8cuf8' 
+            // Sets up the base map toggle 
+            terrain: 'unhcr.map-0wl8cuf8',
+            satellite: 'unhcr.map-zdgpcmtu'
         },
         borders = {         
             //Sets up the borders toggle
-            un: 'unhcr.Borders',
-            streets: 'unhcr.map-9hudy8xp' 
+            streets: 'unhcr.map-9hudy8xp',
+            un: 'unhcr.Borders'
         },
         markers = mapbox.markers.layer(),
         tileLayers = [], markerLayers = [],
@@ -67,8 +71,8 @@ $(function() {
     
     mapbox.load(tileLayers, function(layer) {
         var m = mapbox.map('map');
-        m.addLayer(mapbox.layer().id(basemap.terrain));
-        m.addLayer(mapbox.layer().id(borders.un).composite(false));
+        m.addLayer(mapbox.layer().id(basemap.satellite));
+        m.addLayer(mapbox.layer().id(borders.streets).composite(false));
         (embed) ? m.zoom(5) : m.zoom(5);
         m.center({ lat: 31.59809, lon: 36.36304 }).setZoomRange(7,13); /* Set center and zoom range */
         m.ui.zoomer.add();
