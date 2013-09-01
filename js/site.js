@@ -71,8 +71,8 @@ $(function() {
     
     mapbox.load(tileLayers, function(layer) {
         var m = mapbox.map('map');
-        m.addLayer(mapbox.layer().id(basemap.satellite));
-        m.addLayer(mapbox.layer().id(borders.streets).composite(false));
+        m.addLayer(mapbox.layer().id(basemap.terrain));
+        m.addLayer(mapbox.layer().id(borders.un).composite(false));
         (embed) ? m.zoom(5) : m.zoom(5);
         m.center({ lat: 31.59809, lon: 36.36304 }).setZoomRange(7,13); /* Set center and zoom range */
         m.ui.zoomer.add();
