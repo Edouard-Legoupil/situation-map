@@ -29,10 +29,6 @@ $(function() {
             {
                 title: 'Hospitals',
                 map: 'unhcr.infrajordanhospital,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
-            },
-            {
-                title: 'UNHCR Offices',
-                map: 'unhcr.UNHCR-Offices,unhcr.jordanrefugee_sub,unhcr.jordanrefugee_dis,unhcr.jordanrefugee_gov'
             }
         ],
         basemap = {  
