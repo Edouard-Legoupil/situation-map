@@ -12,7 +12,7 @@ $(function() {
             },
             {
                 title: 'Jordanian Population',
-                map: 'unhcr.jordanpopulation_sub,unhcr.jordanpopulation_dis,unhcr.jordanpopulation_gov'
+                map: 'uunhcr.jordanpopulation_sub,unhcr.jordanpopulation_dis,unhcr.jordanpopulation_gov'
             },
             {
                 title: 'Syrians / Jordanian Ratio',
@@ -37,8 +37,8 @@ $(function() {
         ],
         basemap = {  
             // Sets up the base map toggle 
-            terrain: 'unhcr.map-0wl8cuf8',
-            satellite: 'unhcr.map-zdgpcmtu'
+            terrain: 'unhcr.map-0wl8cuf8,unhcr.jordanrefugee',
+            satellite: 'unhcr.map-zdgpcmtu,unhcr.jordanrefugee'
         },
         borders = {         
             //Sets up the borders toggle
